@@ -34,9 +34,14 @@ This package helps you to have Laravel translation functionality in your client 
 window.Vue = require('vue');
 // If you want to add to window object
 window.translate=require('./VueTranslation/Translation').default.translate;
+// If you want to import or in Vue3
+import { translate } from "./VueTranslation/Translation";
 
 // If you want to use it in your vue components
 Vue.prototype.translate=require('./VueTranslation/Translation').default.translate;
+// If you want to use it in Vue3, Define it globally 
+app.config.globalProperties.translate = translate;
+
 ```  
 Compile the assets by running the command
 ```bash
