@@ -13,7 +13,7 @@ class LaravelTranslationFileHelper implements TranslationFileHelper
      */
     public function fetch()
     {
-        return File::allFiles($this->resourcePath());
+        return File::allFiles($this->langPath());
     }
 
     /**
