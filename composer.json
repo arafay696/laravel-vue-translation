@@ -1,0 +1,32 @@
+{
+    "name": "arafay696/laravel-vue-translation",
+    "description": "A package to have Laravel translation feature in VueJs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul Rafay",
+            "email": "arafay696@gmail.com"
+        },
+        {
+            "name": "Shahzaib Zafar",
+            "email": "shahzaib.ch7.sc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "elementaryframework/fire-fs": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devplus\\Translation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devplus\\Translation\\TranslationServiceProvider"
+            ]
+        }
+    }
+}
