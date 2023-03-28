@@ -15,7 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "elementaryframework/fire-fs": "1.0.0"
+        "elementaryframework/fire-fs": "^1.0"
     },
     "autoload": {
         "psr-4": {
