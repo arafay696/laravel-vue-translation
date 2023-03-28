@@ -32,7 +32,7 @@ class LaravelTranslationFileHelper implements TranslationFileHelper
      */
     public function langPath()
     {
-        return app()->version() >= 9 ? base_path('lang') : resource_path('lang');
+        return ((int) app()->version() >= 9) ? base_path('lang') : resource_path('lang');
     }
 
     /**
